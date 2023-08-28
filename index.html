@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barriecito&family=Bebas+Neue&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="h1">
+      <h1>PASSWORD GENERATOR</h1>
+    </div>
+    <div class="displaypassword">
+      <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field  -->
+      <input readonly placeholder="PASSWORD" class="displaypasswordinput" display-password>
+      <button class="datacoptbtn">
+        <span class="css_styling" data-copymessage></span>
+        <img src="download.png" alt="" >
+
+      </button>
+      
+    </div>
+    <div class="anotherdiv">
+      <div class="lenght">
+        <p class="plength">Password Length</p>
+        <div class="datalenghtnumber">0</div>
+      </div>
+      <div class="slider">
+        <input class="sliderlen" type="range" min="1" max="10" slider-range>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" id="Include_Uppercase_Letters">
+        <label for="Include_Uppercase_Letters">Include Lowercase Letters</label><br>
+        <input type="checkbox" id="Include_Lowercase_Letters">
+        <label for="Include_Lowercase_Letters">Include Uppercase Letters</label><br>
+        <input type="checkbox" id="Include_Numbers">
+        <label for="Include_Numbers">Include Number</label><br>
+        <input type="checkbox" id="Include_Specialcharacters">
+        <label for="Include_Specialcharacters">Include Special characters</label><br>
+      </div>
+      <div class="strength">
+        <p>Strength</p>
+        <div class="strengthcolor" strength-indicator></div>
+      </div>
+      <div class="generatepassword">
+        <button class="display_button" generate-password-btn>GENERATE PASSWORD</button>
+      </div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+  
+</body>
+</html>
